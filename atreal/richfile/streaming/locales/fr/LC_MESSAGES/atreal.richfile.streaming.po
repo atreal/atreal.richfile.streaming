@@ -1,0 +1,139 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-06-24 16:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: atreal.richfile.streaming\n"
+
+#. Default: "RichFileStreaming"
+#: ./profiles/default/controlpanel.xml
+msgid "RichFileStreaming"
+msgstr ""
+
+#: ./browser/controlpanel.py:120
+msgid "RichFileStreaming settings"
+msgstr "Configuration du plugin de streaming"
+
+#: ./browser/flowplayer.pt
+msgid "Error while conversion, please contact your administrator."
+msgstr "Une erreur est survenue pendant la conversion, merci de contacter votre administrateur."
+
+#: ./browser/flowplayer.pt
+msgid "No streaming available."
+msgstr "Aucun streaming disponible."
+
+#: ./browser/flowplayer.pt
+msgid "Your file is being converted. Please wait a moment then refresh."
+msgstr "Votre fichier est en train d'être converti. Attendez un moment puis rafraîchissez."
+
+#: ./browser/flowplayer.pt
+msgid "Refresh"
+msgstr "Rafraîchir"
+
+#: ./browser/controlpanel.py:121
+msgid "RichFileStreaming settings for this site."
+msgstr "Vous pouvez paramétrer ici les propriétés du plugin."
+
+#: ./browser/views.py:12
+msgid "Streaming activated."
+msgstr "Plugin de streaming activé"
+
+#: ./browser/views.py:13
+msgid "Streaming un-activated."
+msgstr "Plugin de streaming désactivé."
+
+#: ./browser/views.py:11
+msgid "The streaming has been updated."
+msgstr "Le streaming a été mis à jour."
+
+#. Default: "Do you want the plugin's display to be collapsed ?"
+#: ./browser/controlpanel.py:26
+msgid "help_rf_streaming_collapsed"
+msgstr "Cochez la case si vous souhaitez que le plugin soit rétracté lors du chargement de la page."
+
+#. Default: "Do you want the player start automatically when the page is loaded or do you want a user action to start it ?"
+#: ./browser/controlpanel.py:34
+msgid "help_rfs_autoplay"
+msgstr "Cochez la case si vous souhaite que la lecture se lance directement au chargement de la page."
+
+#. Default: "The address of your zope server."
+#: ./browser/controlpanel.py:64
+msgid "help_rfs_callback_netloc"
+msgstr "Saisissez ici l'adresse du server zope (ou du zeoclient souahité)."
+
+#. Default: "The address of your ConvertDaemon server. Usually 'localhost', unless you use an external server."
+#: ./browser/controlpanel.py:46
+msgid "help_rfs_host"
+msgstr "Saisissez ici l'adresse du moteur de conversion. Par defaut 'localhost' s'il se situe sur la même machine."
+
+#. Default: "The password for the ConvertDaemon user account."
+#: ./browser/controlpanel.py:80
+msgid "help_rfs_pass"
+msgstr "Saisissez ici le mot de passe du compte dédié au moteur de conversion."
+
+#. Default: "The port of your ConvertDaemon server. Usually '8888', unless you use another port."
+#: ./browser/controlpanel.py:55
+msgid "help_rfs_port"
+msgstr "Saisissez ici le port du moteur de conversion (ConvertDaemon). Par defaut '8888'."
+
+#. Default: "Username for authentication of ConvertDaemon on Plone Site. "
+#: ./browser/controlpanel.py:72
+msgid "help_rfs_user"
+msgstr "Saisissez ici le login du compte dédié au moteur de conversion."
+
+#. Default: "Display collapsed ?"
+#: ./browser/controlpanel.py:24
+msgid "label_rf_streaming_collapsed"
+msgstr "Affichage rétracté ?"
+
+#. Default: "Auto Play ?"
+#: ./browser/controlpanel.py:32
+msgid "label_rfs_autoplay"
+msgstr "Lecture automatique ?"
+
+#. Default: "ConvertDaemon callback netloc"
+#: ./browser/controlpanel.py:62
+msgid "label_rfs_callback_netloc"
+msgstr "Adresse de zope"
+
+#. Default: "ConvertDaemon"
+#: ./browser/controlpanel.py:112
+msgid "label_rfs_convertdaemon"
+msgstr "ConvertDaemon"
+
+#. Default: "ConvertDaemon host"
+#: ./browser/controlpanel.py:44
+msgid "label_rfs_host"
+msgstr "Adresse de ConvertDaemon"
+
+#. Default: "Main"
+#: ./browser/controlpanel.py:108
+msgid "label_rfs_main"
+msgstr ""
+
+#. Default: "ConvertDaemon password"
+#: ./browser/controlpanel.py:78
+msgid "label_rfs_pass"
+msgstr "Général"
+
+#. Default: "ConvertDaemon port"
+#: ./browser/controlpanel.py:53
+msgid "label_rfs_port"
+msgstr "Port de ConvertDaemon"
+
+#. Default: "ConvertDaemon username"
+#: ./browser/controlpanel.py:70
+msgid "label_rfs_user"
+msgstr "Login du compte utilisé par ConvertDaemon"

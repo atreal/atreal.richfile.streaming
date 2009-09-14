@@ -1,0 +1,80 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="atreal.richfile.streaming">
+
+    <browser:resource
+        name="richfilestreaming_icon.png"
+        image="richfilestreaming_icon.png"
+        layer="atreal.richfile.streaming.interfaces.IRichFileStreamingLayer"
+        />
+
+    <adapter factory=".controlpanel.RichFileStreamingControlPanelAdapter" />
+
+    <browser:page
+        name="richfilestreaming-controlpanel"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.RichFileStreamingControlPanel"
+        permission="cmf.ManagePortal"
+        layer="atreal.richfile.streaming.interfaces.IRichFileStreamingLayer"
+        />
+
+    <browser:viewlet
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        name="atreal.richfile.streaming.flowplayer"
+        manager="atreal.richfile.qualifier.interfaces.IRFViewletManager"
+        class=".viewlets.FlowPlayerViewlet"
+        permission="zope2.View"
+        layer="atreal.richfile.streaming.interfaces.IRichFileStreamingLayer"
+        />
+
+    <browser:page
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        name="rfstreaming"
+        class=".views.RFStreamingView"
+        permission="zope2.View"
+        allowed_interface="atreal.richfile.qualifier.interfaces.IRFView"
+        layer="atreal.richfile.streaming.interfaces.IRichFileStreamingLayer"
+        />
+
+    <!--KSS entry-->
+
+    <browser:resource
+      name="streaming.kss"
+      file="streaming.kss"
+      layer="atreal.richfile.streaming.interfaces.IRichFileStreamingLayer"
+      />
+    
+    <browser:page
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        name="updateViewletStreaming"
+        attribute="update"
+        class=".views.RFStreamingView"
+        permission="cmf.ModifyPortalContent"
+        />
+
+    <browser:page
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        name="activateViewletStreaming"
+        attribute="active"
+        class=".views.RFStreamingView"
+        permission="cmf.ModifyPortalContent"
+        />
+
+    <browser:page
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        name="unactivateViewletStreaming"
+        attribute="unactive"
+        class=".views.RFStreamingView"
+        permission="cmf.ModifyPortalContent"
+        />
+    
+    <browser:page
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        name="refreshViewletStreaming"
+        attribute="refresh"
+        class=".views.RFStreamingView"
+        permission="zope2.View"
+        />    
+</configure>

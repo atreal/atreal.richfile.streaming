@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"    
+    i18n_domain="atreal.richfile.streaming">
+  
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <include package="atreal.filestorage.common" />
+    <include package="atreal.richfile.qualifier" />
+    
+    <i18n:registerTranslations directory="locales"/>
+
+    <adapter
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        factory="atreal.richfile.streaming.adapters.ToStreamableObject"
+        provides="atreal.richfile.streaming.interfaces.IStreamable"
+        />
+    
+    <browser:page
+        name="streaming_RPC"
+        for="atreal.richfile.streaming.interfaces.IStreaming"
+        class=".convert.CallBackView"
+        permission="cmf.ManagePortal"
+        allowed_interface=".interfaces.ICallBackView"
+        />
+
+    <subscriber
+        for="atreal.richfile.streaming.interfaces.IStreaming
+             atreal.richfile.qualifier.interfaces.IFileQualifiedEvent"
+        handler="atreal.richfile.streaming.events.buildAndStoreStreaming"
+        />
+
+    <subscriber
+        for="atreal.richfile.streaming.interfaces.IStreaming
+             atreal.richfile.qualifier.interfaces.IMimetypeChangedEvent"
+        handler="atreal.richfile.streaming.events.cleanStreamingData"
+        />
+
+    <cmf:registerDirectory
+        name="atreal_richfile_streaming"
+        />
+
+    <include package=".browser" />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="RichFileStreaming"
+        directory="profiles/default"
+        description="Plugin for RichFileQualifier to preview video and audio files."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+</configure>

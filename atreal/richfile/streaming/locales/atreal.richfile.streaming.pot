@@ -1,0 +1,134 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-06-24 16:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: atreal.richfile.streaming\n"
+
+#. Default: "RichFileStreaming"
+#: ./profiles/default/controlpanel.xml
+msgid "RichFileStreaming"
+msgstr ""
+
+#: ./browser/controlpanel.py:120
+msgid "RichFileStreaming settings"
+msgstr ""
+
+#: ./browser/controlpanel.py:121
+msgid "RichFileStreaming settings for this site."
+msgstr ""
+
+#: ./browser/views.py:12
+msgid "Streaming activated."
+msgstr ""
+
+#: ./browser/views.py:13
+msgid "Streaming un-activated."
+msgstr ""
+
+#: ./browser/views.py:11
+msgid "The streaming has been updated."
+msgstr ""
+
+#. Default: "Do you want the plugin's display to be collapsed ?"
+#: ./browser/controlpanel.py:26
+msgid "help_rf_streaming_collapsed"
+msgstr ""
+
+#. Default: "Do you want the player start automatically when the page is loaded or do you want a user action to start it ?"
+#: ./browser/controlpanel.py:34
+msgid "help_rfs_autoplay"
+msgstr ""
+
+#. Default: "The address of your zope server."
+#: ./browser/controlpanel.py:64
+msgid "help_rfs_callback_netloc"
+msgstr ""
+
+#. Default: "The address of your ConvertDaemon server. Usually 'localhost', unless you use an external server."
+#: ./browser/controlpanel.py:46
+msgid "help_rfs_host"
+msgstr ""
+
+#. Default: "The password for the ConvertDaemon user account."
+#: ./browser/controlpanel.py:80
+msgid "help_rfs_pass"
+msgstr ""
+
+#. Default: "The port of your ConvertDaemon server. Usually '8888', unless you use another port."
+#: ./browser/controlpanel.py:55
+msgid "help_rfs_port"
+msgstr ""
+
+#. Default: "Username for authentication of ConvertDaemon on Plone Site. "
+#: ./browser/controlpanel.py:72
+msgid "help_rfs_user"
+msgstr ""
+
+#. Default: "(Required)"
+#: ./browser/controlpanel.pt:167
+msgid "label_required"
+msgstr ""
+
+#. Default: "Display collapsed ?"
+#: ./browser/controlpanel.py:24
+msgid "label_rf_streaming_collapsed"
+msgstr ""
+
+#. Default: "Auto Play ?"
+#: ./browser/controlpanel.py:32
+msgid "label_rfs_autoplay"
+msgstr ""
+
+#. Default: "ConvertDaemon callback netloc"
+#: ./browser/controlpanel.py:62
+msgid "label_rfs_callback_netloc"
+msgstr ""
+
+#. Default: "ConvertDaemon"
+#: ./browser/controlpanel.py:112
+msgid "label_rfs_convertdaemon"
+msgstr ""
+
+#. Default: "ConvertDaemon host"
+#: ./browser/controlpanel.py:44
+msgid "label_rfs_host"
+msgstr ""
+
+#. Default: "Main"
+#: ./browser/controlpanel.py:108
+msgid "label_rfs_main"
+msgstr ""
+
+#. Default: "ConvertDaemon password"
+#: ./browser/controlpanel.py:78
+msgid "label_rfs_pass"
+msgstr ""
+
+#. Default: "ConvertDaemon port"
+#: ./browser/controlpanel.py:53
+msgid "label_rfs_port"
+msgstr ""
+
+#. Default: "ConvertDaemon username"
+#: ./browser/controlpanel.py:70
+msgid "label_rfs_user"
+msgstr ""
+
+#. Default: "Required"
+#: ./browser/controlpanel.pt:167
+msgid "title_required"
+msgstr ""
+

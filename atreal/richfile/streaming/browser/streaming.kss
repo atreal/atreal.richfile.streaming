@@ -1,0 +1,29 @@
+#streaming a.viewlet-update:click {
+    evt-click-preventdefault:               true;
+    action-server:                          updateViewletStreaming;
+    updateViewletStreaming-viewlet:         kssAttr(viewlet, True);
+}
+
+#streaming a.viewlet-activate:click {
+    evt-click-preventdefault:               true;
+    action-server:                          activateViewletStreaming;
+    activateViewletStreaming-viewlet:       kssAttr(viewlet, True);
+}
+
+#streaming a.viewlet-unactivate:click {
+    evt-click-preventdefault:               true;
+    action-server:                          unactivateViewletStreaming;
+    unactivateViewletStreaming-viewlet:     kssAttr(viewlet, True);
+}
+
+#streaming a.viewlet-refresh:click {
+    evt-click-preventdefault:               true;
+    action-server:                          refreshViewletStreaming;
+    refreshViewletStreaming-viewlet:        kssAttr(viewlet, True);
+}
+
+#streaming input.viewlet-refresh:click {
+    evt-click-preventdefault:               true;
+    action-server:                          refreshViewletStreaming;
+    refreshViewletStreaming-viewlet:        kssAttr(viewlet);
+}

@@ -1,0 +1,12 @@
+=======================================
+Changelog for atreal.richfile.streaming
+=======================================
+(name of developer listed in brackets)
+
+1.0.0beta1 - 2009-09-04
+-----------------------
+
+- First public release
+[Jean-Nicolas Bès]
+[Matthias Broquet]
+[Florent Michon]

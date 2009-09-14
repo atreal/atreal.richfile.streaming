@@ -1,0 +1,86 @@
+<dl class="richfile portlet"
+    tal:condition="view/available"
+    tal:attributes="id view/plugin_id"
+    i18n:domain="atreal.richfile.streaming">
+
+    <dt tal:attributes="id string:${view/plugin_id}Header" class="rfheader portletHeader">
+        <span class="portletTopLeft"></span>
+        <tal:block tal:replace="structure view/controls"/>
+        <span class="title" style="font-weight:bold"
+            i18n:translate="">
+            Streaming
+        </span>
+
+        <span class="portletTopRight"></span>
+    </dt>
+    
+    <dd tal:condition="view/active"
+        class="rfbody portletItem odd"
+        tal:attributes="id string:${view/plugin_id}Body;
+                        class string:rfbody portletItem odd ${view/collapsed}">
+        
+        <!--Your specific code here-->           
+    <tal:def define="state view/state">
+        
+    <tal:notstate tal:condition="python:state!='ok'">
+
+        <input tal:condition="python:state=='processing'"
+               type="button"
+               style="float:right"
+               value="Refresh"
+			   class="context viewlet-refresh kssattr-viewlet-streaming"
+			   i18n:attributes="value"/>
+        <img tal:condition="python:state=='processing'"
+             tal:attributes="src string:${view/portal_url}/spinner.gif" alt="" />&nbsp;
+        <span tal:condition="python:state=='processing'"
+              i18n:translate="">Your file is being converted. Please wait a moment then refresh.</span>
+        <img tal:condition="python:state=='empty'"
+             tal:attributes="src string:${view/portal_url}/info_icon.gif" alt="" />&nbsp;
+        <span tal:condition="python:state=='empty'"
+              i18n:translate="">No streaming available.</span>
+    
+        <img tal:condition="python:state=='error'"
+             tal:attributes="src string:${view/portal_url}/error_icon.gif" alt="" />&nbsp;
+        <span tal:condition="python:state=='error'"
+              i18n:translate="">Error while conversion, please contact your administrator.</span>
+        
+        
+        
+    </tal:notstate>
+
+    <tal:state tal:condition="python:state=='ok'">
+        <script type="text/javascript" src="flowplayer-3.1.1.min.js"></script>
+        
+        <tal:video tal:condition="view/video">
+            
+            <div id="player"
+                 style="display:block;width:520px;height:330px">
+            </div>
+            
+            <script type="text/javascript" tal:content="view/videoPlayer">
+                flowplayer("player", "flowplayer-3.1.1.swf")
+            </script>
+            
+        </tal:video>
+        
+        
+        <tal:audio tal:condition="view/audio">
+            
+            <div id="player"
+                 style="display:block;width:520px;height:25px;">
+            </div>
+
+            <script type="text/javascript" tal:content="view/audioPlayer">
+                flowplayer("player", "flowplayer-3.1.1.swf")
+            </script>
+            
+        </tal:audio>
+        
+    </tal:state>
+
+    </tal:def>
+    <!--End of specific code-->
+    
+    </dd>
+    
+</dl>   

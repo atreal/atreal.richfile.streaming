@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<componentregistry>
+ <adapters/>
+ <utilities>
+  <utility
+     name="atreal.richfile.streaming.IRichFileStreamingSite"
+     component="atreal.richfile.streaming.interfaces.IRichFileStreamingSite"
+     interface="zope.interface.interfaces.IInterface" />
+ </utilities>
+</componentregistry>
