@@ -14,7 +14,7 @@ Authors
 -------
 
 :atReal Team - contac@atreal.net :
-    Jean-Nicolas Bès [drjnut]
+    Jean-Nicolas Bes [drjnut]
     Matthias Broquet [tiazma]
     Florent Michon [f10w]
 

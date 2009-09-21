@@ -15,6 +15,6 @@ controlpanel updated
 -----------------------
 
 - First public release
-[Jean-Nicolas Bès]
+[Jean-Nicolas Bes]
 [Matthias Broquet]
 [Florent Michon]
