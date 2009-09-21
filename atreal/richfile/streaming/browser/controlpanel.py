@@ -72,7 +72,7 @@ class IRFStreamingConvertDaemonSchema(Interface):
                            description=_(u"help_rfs_user",
                                          default=u"Username for authentication "
                                          "of ConvertDaemon on Plone Site. "),
-                           default='admin',
+                           default=u'admin',
                            required=True)
  
     rfs_pass = TextLine(title=_(u'label_rfs_pass',
@@ -80,7 +80,7 @@ class IRFStreamingConvertDaemonSchema(Interface):
                          description=_(u"help_rfs_pass",
                                        default=u"The password for the ConvertDaemon "
                                        "user account."),
-                         default='admin',
+                         default=u'admin',
                          required=True)
     
     
