@@ -64,7 +64,7 @@ class IRFStreamingConvertDaemonSchema(Interface):
                          description=_(u"help_rfs_callback_netloc",
                                        default=u"The address of your "
                                        "zope server."),
-                         default=u'localhost:8650',
+                         default=u'localhost:8080',
                          required=True)
     
     rfs_user = TextLine(title=_(u'label_rfs_user',
@@ -72,7 +72,7 @@ class IRFStreamingConvertDaemonSchema(Interface):
                            description=_(u"help_rfs_user",
                                          default=u"Username for authentication "
                                          "of ConvertDaemon on Plone Site. "),
-                           default=None,
+                           default='admin',
                            required=True)
  
     rfs_pass = TextLine(title=_(u'label_rfs_pass',
@@ -80,7 +80,7 @@ class IRFStreamingConvertDaemonSchema(Interface):
                          description=_(u"help_rfs_pass",
                                        default=u"The password for the ConvertDaemon "
                                        "user account."),
-                         default=None,
+                         default='admin',
                          required=True)
     
     

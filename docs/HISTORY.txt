@@ -3,6 +3,14 @@ Changelog for atreal.richfile.streaming
 =======================================
 (name of developer listed in brackets)
 
+1.0.0beta2 - 2009-09-21
+-----------------------
+
+- Translation corrected in control panel and default values in 
+controlpanel updated
+[Florent Michon]
+
+
 1.0.0beta1 - 2009-09-04
 -----------------------
 

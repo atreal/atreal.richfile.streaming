@@ -4,8 +4,11 @@ ReadMe for atreal.richfile.streaming
 
 Overview
 --------
-A plugin for atreal.richfile that ...
+Streaming Support Plugin for RichFileQualifier 
 
+Dependencies
+------------
+ConvertDaemon
 
 Authors
 -------

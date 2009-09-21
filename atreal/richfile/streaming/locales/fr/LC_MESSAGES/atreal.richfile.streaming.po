@@ -126,7 +126,7 @@ msgstr ""
 #. Default: "ConvertDaemon password"
 #: ./browser/controlpanel.py:78
 msgid "label_rfs_pass"
-msgstr "Général"
+msgstr "Mot de passe"
 
 #. Default: "ConvertDaemon port"
 #: ./browser/controlpanel.py:53
