@@ -75,7 +75,7 @@ class IRFStreamingConvertDaemonSchema(Interface):
                            default=u'admin',
                            required=True)
  
-    rfs_pass = TextLine(title=_(u'label_rfs_pass',
+    rfs_pass = Password(title=_(u'label_rfs_pass',
                                  default=u'ConvertDaemon password'),
                          description=_(u"help_rfs_pass",
                                        default=u"The password for the ConvertDaemon "
