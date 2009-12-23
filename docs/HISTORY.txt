@@ -3,6 +3,13 @@ Changelog for atreal.richfile.streaming
 =======================================
 (name of developer listed in brackets)
 
+1.0.0rc1 - 2009-12-23
+---------------------
+
+- Use password field for ConvertDaemon password in control panel.
+[dot]
+
+
 1.0.0beta2 - 2009-09-21
 -----------------------
 
